@@ -1,0 +1,19 @@
+.header-primary {
+    font-family: 'Seymour One';
+      
+    @include typography ( 400, 36px, 1.25);
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.header-secondary {
+    padding-top: 60px;
+
+    @include typography (800, 30px, 1.23);
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}

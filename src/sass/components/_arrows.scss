@@ -1,0 +1,21 @@
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+
+    width: 2.5625em;
+    
+
+    &:hover {
+        width: 3.1875em;
+    }
+
+    &:focus {
+        width: 2.1669921875em;
+    }
+}
+
+
