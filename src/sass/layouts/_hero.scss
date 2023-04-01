@@ -1,0 +1,254 @@
+.hero {
+    position: relative;
+    background-color: $green-backgr;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    // @include mobile {
+    //     height: 100vh;
+    //     background-image: url('../../images/hero-dots-mob.png');
+    //         background-position: bottom;
+    // }
+
+    // @include tablet {
+    //     background-image: url('../../images/hero-dots-tab.png');
+    // }
+
+    // @include desktop {
+    //     background-image: url('../../images/hero-dots-desk.png');
+    // }
+
+    .hero-icecream-plate {
+
+        @include tablet {
+            padding-bottom: 13px;
+        }
+
+        @include desktop {
+            padding-bottom: 64px;
+        }
+    }
+
+    .hero-ice-cream {
+        position: absolute;
+        bottom: 0;
+        left: 54%;
+
+        @include mobile {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        // @include tablet {
+            
+        // }
+
+        // @include desktop {
+            
+        // }
+
+    }
+    
+    
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hero-content-wrapper {
+    @include mobile {
+        // margin-left: 20px;
+        margin-top: 110px;
+        max-width: 247px;
+    }
+
+    @include tablet {
+        margin-top: 104px;
+        max-width: 181px;
+    }
+
+    @include desktop {
+        margin-top: 118px;
+        max-width: 367px;
+
+    }
+}
+
+.hero-title {
+    font-family: 'Seymour One';
+    text-transform: uppercase;
+
+    @include mobile {
+        margin-bottom: 32px;
+
+
+        @include typography (400, 26px, 1.27);
+        letter-spacing: 0.04em;
+        color: $white;
+
+        &__accent {
+            @include typography (400, 34px, 0.97);
+        }
+    }
+
+    @include tablet {
+        margin-bottom: 20px;
+
+
+        @include typography (400, 18px, 1.28);
+        letter-spacing: 0.04em;
+        color: $white;
+
+        &__accent {
+            @include typography (400, 24px, 0.55);
+        }
+    }
+
+    @include desktop {
+        margin-bottom: 28px;
+        @include typography (400, 38px, 1.26);
+
+        &__accent {
+            @include typography (400, 38px, 1.26);
+        }
+    }
+}
+
+.info-link {
+    display: inline-block;
+    color: $yellow;
+
+    @include mobi-tab {
+        margin-left: 8px;
+        padding: 7px 10px;
+        @include typography (600, 8px, 1.25);
+    }
+
+    @include desktop {
+        margin-left: 12px;
+        padding: 12px 22px;
+        @include typography (600, 14px, 1.21);
+    }
+
+    &:hover {
+        color: $green;
+    }
+
+    &:focus {
+        color: $white;
+    }
+
+    &:disabled {
+        color: $grey;
+    }
+
+}
+
+.hero-list-wrapper {
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        margin-top: 94px;
+    }
+}
+
+.hero-content-item:first-child {
+    @include tablet {
+        margin-bottom: 20px;
+    }
+    
+    @include desktop {
+        margin-bottom: 16px;
+    }
+    
+}
+
+
+.hero-content-num {
+
+    @include typography (900, 28px, 1.21);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: $black;
+}
+
+.hero-content-text {
+
+    @include typography (400, 8px, 1.25);
+    text-align: right;
+    color: $white;
+}
+
+.hero-info-wrapper {
+    margin-top: 42px;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.hero-info-text {
+    @media screen and (min-width: 768px) {
+        margin-left: 33px;
+        width: 151px;
+        @include typography (400, 14px, 1.4);
+        color: $white;
+
+    }
+
+    @include desktop {
+        margin-left: 14px;
+        width: 200px;
+        @include typography (400, 14px, 1.4)
+        
+    }
+
+}
+
+.icon-arrow .icon-arrow1 {
+    fill: $white;
+    width: 40px;  
+    
+    ~ .icon-arrow2 {
+        display: none;
+    }
+    ~ .icon-arrow3 {
+        display: none;
+    }
+}
+
+.icon-arrow:hover .icon-arrow2 {
+    fill: $white;
+    width: 50px;
+    ~ .icon-arrow1 {
+        display: none;
+    }
+    
+    ~ .icon-arrow3 {
+        display: none;
+    }
+}
+
+.icon-arrow:focus .icon-arrow3 {
+    fill: $white;
+    width: 50px;
+    ~ .icon-arrow1 {
+        display: none;
+    }
+
+    ~ .icon-arrow2 {
+        display: none;
+    }
+
+}
