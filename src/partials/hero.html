@@ -1,0 +1,101 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-wrapper">
+      <div class="hero-content-wrapper">
+        <h1 class="hero-title">
+          ice cream made with <span class="hero-title__accent">passion</span>
+        </h1>
+
+        <button class="button secondary products">Products</button>
+        <a class="info-link" href="">How it’s made?</a>
+      </div>
+
+      <div class="hero-list-wrapper">
+        <ul class="hero-content-list list">
+          <li class="hero-content-item">
+            <p class="hero-content-num">16</p>
+            <p class="hero-content-text">cafes</p>
+          </li>
+          <li class="hero-content-item">
+            <p class="hero-content-num">23</p>
+            <p class="hero-content-text">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-info-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px )"
+          srcset="
+            ./images/hero-plate-desk.png    1x,
+            ./images/hero-plate-desk-2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            ./images/hero-plate-tab.png    1x,
+            ./images/hero-plate-tab-2x.png 2x
+          "
+        />
+
+        <img
+          class="hero-icecream-plate"
+          src="./images/hero-plate-tab.png"
+          alt=""
+        />
+      </picture>
+
+      <p class="hero-info-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+        <a class="icon-arrow" href="">
+          <svg class="icon-arrow1">
+            <use href="./images/icons.svg#icon-arrow1"></use>
+          </svg>
+          <svg class="icon-arrow2">
+            <use href="./images/icons.svg#icon-arrow2"></use>
+          </svg>
+          <svg class="icon-arrow3">
+            <use href="./images/icons.svg#icon-arrow3"></use>
+          </svg>
+        </a>
+        <!-- <svg class="icon-arrow">
+                            <use class="icon-arrow1" href="./images/icons.svg#icon-arrow1"></use>
+                            <use class="icon-arrow2" href="./images/icons.svg#icon-arrow2"></use>
+                            <use class="icon-arrow3" href="./images/icons.svg#icon-arrow3"></use>
+                        </svg> -->
+      </p>
+    </div>
+
+    <div class="hero-img">
+      <picture>
+        <source
+          media="(min-width: 1200px )"
+          srcset="
+            ./images/hero-ice-cr-desk.png    1x,
+            ./images/hero-ice-cr-desk-2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-ice-cr-tab.png    1x,
+            ./images/hero-ice-cr-tab-2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero-ice-cr-mob.png    1x,
+            ./images/hero-ice-cr-mob-2x.png 2x
+          "
+        />
+
+        <img class="hero-ice-cream" src="./images/hero-ice-cr-mob.png" alt="" />
+      </picture>
+    </div>
+  </div>
+</section>
