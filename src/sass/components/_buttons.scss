@@ -7,11 +7,10 @@
     @include typography (600, 14px, 1.29);   
 }
 
-.products {
+.prod {
     @include mobi-tab{
-        display: inline-block;
-        padding: 5px 10px;
         
+        padding: 5px 10px;
         @include typography (600, 8px, 1.25);
     }
 }

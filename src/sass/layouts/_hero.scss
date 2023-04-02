@@ -233,51 +233,10 @@
         @include typography (400, 14px, 1.4);
         
     }
-
-}
-
-.icon-arrow  {
-    height: 64px;
-    .icon-arrow1 {
-        display: block;
-        fill: $white;
-    }
     
-   .icon-arrow2 {
-        display: none;
-    }
-    .icon-arrow3 {
-        display: none;
+    .icon-arrow {
+        height: 64px;
     }
 }
 
-.icon-arrow:hover {
-    .icon-arrow2 {
-        display: block;
-        fill: $white;
-    }
-    
-    .icon-arrow1 {
-        display: none;
-    }
-    
-    .icon-arrow3 {
-        display: none;
-    }
-}
 
-.icon-arrow:focus  {
-    .icon-arrow3 {
-        display: block;
-        fill: $white;
-    }
-    
-    .icon-arrow1 {
-        display: none;
-    }
-
-    .icon-arrow2 {
-        display: none;
-    }
-
-}

@@ -1,0 +1,191 @@
+.products {
+    padding-bottom: 60px;
+    background-image: url('../images/prod-backgr.jpg');
+    background-size: cover;
+
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //     height: 100vh;
+    // }
+}
+
+.product-list {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 164px;
+        align-items: center;
+        margin-top: 148px;
+    }
+
+    @include tablet {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 200px;
+    }
+
+    @include desktop {
+        margin-top: 303px;
+        gap: 32px;
+    }
+}
+
+.prod-card {
+    height: 100%;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    // overflow: hidden;
+
+    @include mobile {
+        width: 280px;
+    }
+
+    @include tablet {
+        width: 224px;
+    }
+
+    @include desktop {
+        width: 370px;
+    }
+
+    &.ice-cream {
+        background-color: $light-green-backgr;
+    }
+
+    &.ice-coffe {
+        background-color: $olive-backgr;
+    }
+
+    &.milkshake {
+        background-color: $brown-backgr;
+    }
+    
+        
+    
+}
+
+.card-thumb {
+    position: relative;
+}
+
+.card-image {
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-position: bottom -18px;
+    
+    &.ice-cream {
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);   
+        
+    }
+    
+    &.ice-coffe {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+
+    &.milkshake {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+.card-meta {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .icon-arrow {
+        display: flex;
+        justify-content: center;
+        
+    }
+    @include mobile {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @include tablet {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    @include desktop {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+}
+
+
+.card-title {
+    @include mobile {
+        padding-top: 123px;
+        margin-bottom: 40px;
+
+        @include typography (700, 20px, 1.23);
+    }
+
+    @include tablet {
+        padding-top: 106px;
+        margin-bottom: 40px;
+        @include typography (700, 22px, 1.23);
+    }
+
+    @include desktop {
+        padding-top: 166px;
+        margin-bottom: 65px;
+        @include typography (700, 30px, 1.23);
+    }
+    
+   
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+
+.card-text {
+    height: 100%;
+    
+    @include mobile {
+        margin-bottom: 20px;
+        @include typography (400, 14px, 1.76);
+    }
+
+    @include tablet {
+        margin-bottom: 30px;
+        @include typography (400, 14px, 1.76);
+    }
+
+    @include desktop {
+        margin-bottom: 66px;
+        @include typography (400, 16px, 1.76);
+    }
+    
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.card-icon {
+    @include mobile {
+        margin-bottom: 20px;
+    }
+
+    @include tablet {
+        margin-bottom: 30px;
+    }
+    
+    @include desktop {
+        margin-bottom: 60px;
+    }
+    
+}

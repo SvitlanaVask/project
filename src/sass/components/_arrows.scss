@@ -1,21 +1,46 @@
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-
-    width: 2.5625em;
-    
-
-    &:hover {
-        width: 3.1875em;
+.icon-arrow  {
+    display: block;
+    .icon-arrow1 {
+        display: block;
+        fill: currentColor;
     }
-
-    &:focus {
-        width: 2.1669921875em;
+    
+   .icon-arrow2 {
+        display: none;
+    }
+    .icon-arrow3 {
+        display: none;
     }
 }
 
+.icon-arrow:hover {
+    .icon-arrow2 {
+        display: block;
+        fill: currentColor;
+    }
+    
+    .icon-arrow1 {
+        display: none;
+    }
+    
+    .icon-arrow3 {
+        display: none;
+    }
+}
+
+.icon-arrow:focus  {
+    .icon-arrow3 {
+        display: block;
+        fill: currentColor;
+    }
+    
+    .icon-arrow1 {
+        display: none;
+    }
+
+    .icon-arrow2 {
+        display: none;
+    }
+
+}
 
