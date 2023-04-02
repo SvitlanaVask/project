@@ -1,0 +1,148 @@
+.features {
+    color: $white;
+    background-color: $green-backgr;
+}
+
+.cow-wrapper {
+    position: relative;
+
+    @include mobile {
+        width: 278px;
+        height: 278px;
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+        border-radius: 140.182px;
+    }
+
+
+    @include tablet {
+        width: 335px;
+        height: 331px;
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+        border-radius: 165.879px;
+    }
+
+    @include desktop { 
+        
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        border-radius: 250px;
+    }
+}
+
+.cow-image {
+    position: absolute;
+    border-radius: 50%;
+
+    @include mobile {
+        left: 1px;
+        top: 22px;
+    }
+
+
+    @include tablet {
+        left: 1px;
+        top: 26px;
+    }
+
+    @include desktop {        
+        left: 2px;
+        top: 39px;
+    }
+}
+
+.features-wrapper {
+    margin-top: 82px;
+    
+
+    @include tablet {
+        display: flex;
+        gap: 32px;
+    }
+
+    @include desktop {
+        gap: 100px;
+    }
+    
+}
+
+.features-descr {
+
+    @include mobile {
+        width: 220px;
+        margin-top: 40px;
+    }
+    
+
+    @include tablet {
+        width: 336px;
+
+    }
+
+    @include desktop {
+        width: 463px;
+        margin-top: 79px;
+    }
+    
+
+    .button {
+        margin-top: 40px;
+    }
+}
+
+.features-text {
+    @include typography (400, 12px, 1.76);
+    letter-spacing: 0.04em;
+}
+
+.features-text {
+    margin-bottom: 8px;
+}
+
+.features-list {
+    margin-top: 60px;
+
+    @include tablet {
+        display: flex;
+        gap: 80px;
+        padding-bottom: 204px;
+    }
+
+    @include desktop {
+        gap: 32px;
+        padding-bottom: 180px;
+    }
+    
+    
+
+    
+}
+
+.features-item {
+    // @include tablet {
+        
+    // }
+
+    @include desktop {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+.features-num {
+    @include typography (700, 48px, 1.23);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.features-num-text {
+    @include typography (400, 14px, 1.74);
+    text-align: center;
+}
+
+
