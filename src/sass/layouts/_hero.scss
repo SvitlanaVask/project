@@ -4,19 +4,24 @@
     background-repeat: no-repeat;
     background-position: bottom;
     
-    // @include mobile {
-    //     height: 100vh;
-    //     background-image: url('../../images/hero-dots-mob.png');
-    //         background-position: bottom;
-    // }
+    @include mobile {
+        height: 100vh;
+        background-image: url('../images/hero-dots-mob.png');
+        background-size: 100%;
 
-    // @include tablet {
-    //     background-image: url('../../images/hero-dots-tab.png');
-    // }
+        @media screen and (min-width: 481px) and (max-width: 767px) {
+            background-size: 480px;
+        }
+    }
 
-    // @include desktop {
-    //     background-image: url('../../images/hero-dots-desk.png');
-    // }
+    @include tablet {
+        background-image: url('../images/hero-dots-tab.png');
+    }
+
+    @include desktop {
+        background-image: url('../images/hero-dots-desk.png');
+        
+    }
 
     .hero-icecream-plate {
 
@@ -39,13 +44,7 @@
             transform: translateX(-50%);
         }
 
-        // @include tablet {
-            
-        // }
-
-        // @include desktop {
-            
-        // }
+        
 
     }
     
@@ -155,6 +154,10 @@
     @include tablet {
         margin-top: 94px;
     }
+
+    @include desktop {
+        margin-top: 126px;
+    }
 }
 
 .hero-content-item:first-child {
@@ -171,7 +174,15 @@
 
 .hero-content-num {
 
-    @include typography (900, 28px, 1.21);
+    @include tablet {
+        @include typography (900, 28px, 1.21);
+    }
+
+    @include desktop {
+        @include typography (900, 46px, 1.22);
+    }
+
+    
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: right;
@@ -180,7 +191,14 @@
 
 .hero-content-text {
 
-    @include typography (400, 8px, 1.25);
+    @include tablet {
+        @include typography (400, 8px, 1.25);
+    }
+
+    @include desktop {
+        @include typography (400, 14px, 1.21);
+    }
+
     text-align: right;
     color: $white;
 }
@@ -200,54 +218,65 @@
 
 .hero-info-text {
     @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
         margin-left: 33px;
         width: 151px;
-        @include typography (400, 14px, 1.4);
+        @include typography (400, 12px, 1.4);
         color: $white;
 
     }
 
     @include desktop {
+        margin-bottom: 32px;
         margin-left: 14px;
         width: 200px;
-        @include typography (400, 14px, 1.4)
+        @include typography (400, 14px, 1.4);
         
     }
 
 }
 
-.icon-arrow .icon-arrow1 {
-    fill: $white;
-    width: 40px;  
+.icon-arrow  {
+    height: 64px;
+    .icon-arrow1 {
+        display: block;
+        fill: $white;
+    }
     
-    ~ .icon-arrow2 {
+   .icon-arrow2 {
         display: none;
     }
-    ~ .icon-arrow3 {
+    .icon-arrow3 {
         display: none;
     }
 }
 
-.icon-arrow:hover .icon-arrow2 {
-    fill: $white;
-    width: 50px;
-    ~ .icon-arrow1 {
+.icon-arrow:hover {
+    .icon-arrow2 {
+        display: block;
+        fill: $white;
+    }
+    
+    .icon-arrow1 {
         display: none;
     }
     
-    ~ .icon-arrow3 {
+    .icon-arrow3 {
         display: none;
     }
 }
 
-.icon-arrow:focus .icon-arrow3 {
-    fill: $white;
-    width: 50px;
-    ~ .icon-arrow1 {
+.icon-arrow:focus  {
+    .icon-arrow3 {
+        display: block;
+        fill: $white;
+    }
+    
+    .icon-arrow1 {
         display: none;
     }
 
-    ~ .icon-arrow2 {
+    .icon-arrow2 {
         display: none;
     }
 

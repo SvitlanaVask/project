@@ -8,34 +8,20 @@
 
 .header-wrapper {
     align-items: center;
-    
+    display: flex;
+
     @include mobile {
-        display: flex;
+        margin-top: 16px;
         justify-content: space-between;
     }
 
     @include tablet {
-        display: flex;
+        margin-top: 20px;
         justify-content: space-between;
     }
 }
 
-.header-logo {
-    @include mobile {
-        // padding-left: 31px;
-        // padding-top: 12px;
-    }
 
-    @include tablet {
-        // padding-left: 32px;
-        // padding-top: 20px;
-    }
-
-    @include desktop {
-        padding-left: 16px;
-        padding-top: 8px;
-    }
-}
 
 .header-logo-icon {
     @include mobile {
@@ -54,53 +40,73 @@
     }
 }
 
+.tablet-wrapper {
+    @include tablet {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    
+}
+
 .menu-button {
-    margin-top: 16px;
-    margin-right: 20px;
+    
+    fill: $white;
 
     @media screen and (min-width: 1200px) {
         display: none;
     }
 }
 
+.menu-button:hover {
+    fill: $yellow;
+}
+
 .burger-menu {
-    position: absolute;
+    position: fixed;
     z-index: 5;
     left: 0;
     top: 0;
-    // right: 0;
+    
     width: 100vw;
     height: 100vh;
 
     @include mobile {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // background-color: $green-backgr;
-        background-color: brown;
-        
-
-        // padding-top: 76px;
+        display: flex;
+        flex-direction: column;
         padding-bottom: 64px;
+        
+        background-color: $green-backgr;
         text-align: center;
     }
 
     @include tablet {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        background-color: $light-green-backgr;
-
-
-        // padding-top: 76px;
         padding-bottom: 64px;
         text-align: center;
+        
+        background-color: $light-green-backgr;
+    }
+
+    @include desktop {
+        display: none;
     }
 }
 
 .burger-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        margin-top: 12px;
+        margin-left: 31px;
+        margin-right: 20px;
+    }
+
+    @include tablet {
+        margin-top: 20px;
+        margin-left: 32px;
+        margin-right: 32px;   
+    }
 }
 
 
@@ -110,11 +116,12 @@
 
 .burger-list {
     @include mobile {
-        padding-top: 100px;
+        flex-grow: 1;
+        margin-top: 51px;
     }
     
     @include tablet {
-        padding-top: 140px;
+        margin-top: 76px;
         
     }
 }
@@ -122,12 +129,20 @@
 
 .burger-link {
     color: $white;
-    @include typography (700, 32px, 1.22);
+    
     text-align: center;
     text-decoration: none;
 
     &:hover, &:focus {
         color: $black;
+    }
+
+    @include mobile {
+        @include typography (700, 32px, 1.22);
+    }
+
+    @include tablet {
+        @include typography (700, 48px, 1.23);    
     }
 
 }
