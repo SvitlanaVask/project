@@ -1,0 +1,138 @@
+<section class="reviews">
+  <div class="container">
+    <div class="section-reviews-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px )"
+          srcset="
+            ./images/section-picture-desk.jpg    1x,
+            ./images/section-picture-desk-2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/section-picture-tab.jpg    1x,
+            ./images/section-picture-tab-2x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/section-picture-mob.jpg    1x,
+            ./images/section-picture-mob-2x.jpg 2x
+          "
+        />
+
+        <img
+          class="section-reviews-img"
+          src="./images/section-picture-mob.jpg"
+          alt=""
+        />
+      </picture>
+    </div>
+
+    <!-- ============================SWIPER===================== -->
+    <div class="swiper reviews-swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <article class="review-card">
+            <div class="card-pic">
+              <img
+                class="client-img"
+                src="./images/client-responce1.jpg"
+                alt=""
+                srcset="
+                  ./images/client-responce1.jpg    1x,
+                  ./images/client-responce1-2x.jpg 2x
+                "
+              />
+            </div>
+            <div class="card-responce">
+              <p class="client-response">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+              <p class="client-name">Emily, Los Angeles</p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="review-card">
+            <div class="card-pic">
+              <img
+                class="client-img"
+                src="./images/client-responce2.jpg"
+                alt=""
+                srcset="
+                  ./images/client-responce2.jpg    1x,
+                  ./images/client-responce2-2x.jpg 2x
+                "
+              />
+            </div>
+            <div class="card-responce">
+              <p class="client-response">
+                Every day we come to you with friends after classes in college.
+                We love your ice cream and casual atmosphere!
+              </p>
+              <p class="client-name">Bryan, New-York</p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="review-card">
+            <div class="card-pic">
+              <img
+                class="client-img"
+                src="./images/client-responce3.jpg"
+                alt=""
+                srcset="
+                  ./images/client-responce3.jpg    1x,
+                  ./images/client-responce3-2x.jpg 2x
+                "
+              />
+            </div>
+            <div class="card-responce">
+              <p class="client-response">
+                Ice cream is my passion! I love your chocolate hazelnut ice
+                cream! And I really like the excellent service - always served
+                politely and quickly!
+              </p>
+              <p class="client-name">Diana, Chicago</p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="review-card">
+            <div class="card-pic">
+              <img
+                class="client-img"
+                src="./images/client-responce4.jpg"
+                alt=""
+                srcset="
+                  ./images/client-responce4.jpg    1x,
+                  ./images/client-responce4-2x.jpg 2x
+                "
+              />
+            </div>
+            <div class="card-responce">
+              <p class="client-response">
+                I love eating popsicles on a hot day. Yours is always delicious.
+                I recommend your cafe to everyone I know.
+              </p>
+              <p class="client-name">Sam, Los Angeles</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/slider.js"></script>
