@@ -1,0 +1,86 @@
+<div class="backdrop-buy-now is-hidden">
+  <div class="modal-buy-now">
+    <svg class="icon-cross" width="20" height="20">
+      <use href="./images/icons.svg#icon-cross"></use>
+    </svg>
+
+    <p class="buy-now-title">Buy now</p>
+    <ul class="buy-now-list list">
+      <li class="buy-now-item">
+        <article class="buy-now-card ice-cream">
+          <div class="modal-card-thumb">
+            <img
+              class="modal-card-image ice-cream"
+              srcset="./images/prod1-modal.jpg 1x, ./images/prod1-modal.jpg 2x"
+              alt=""
+            />
+          </div>
+          <div class="modal-card-meta">
+            <div class="modal-card-title">ice cream</div>
+          </div>
+        </article>
+      </li>
+      <li class="buy-now-item">
+        <article class="buy-now-card ice-coffe">
+          <div class="modal-card-thumb">
+            <img
+              class="modal-card-image ice-coffe"
+              srcset="./images/prod2-modal.jpg 1x, ./images/prod2-modal.jpg 2x"
+              alt="ice-coffe"
+            />
+          </div>
+          <div class="modal-card-meta">
+            <div class="modal-card-title">ice coffee</div>
+          </div>
+        </article>
+      </li>
+      <li class="buy-now-item">
+        <article class="buy-now-card milkshake">
+          <div class="modal-card-thumb">
+            <img
+              class="modal-card-image milkshake"
+              srcset="./images/prod3-modal.jpg 1x, ./images/prod3-modal.jpg 2x"
+              alt=""
+            />
+          </div>
+          <div class="modal-card-meta">
+            <div class="modal-card-title">milkshakes</div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <form buy-now-form>
+      <label class="form-field">
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+        />
+      </label>
+
+      <label class="form-field">
+        <input
+          class="form-input"
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="form-field">
+        <textarea
+          class="form-textarea"
+          name="comment"
+          id="comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button class="form-button button primary" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
