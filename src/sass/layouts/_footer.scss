@@ -1,0 +1,191 @@
+.footer {
+  background-color: $green-backgr;
+
+ 
+} 
+
+.footer-wrapper {
+  border-bottom: 1px solid #e1e1e1;
+  @include mobile {
+    padding-bottom: 40px;
+  }
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+  @include desktop {
+    padding-bottom: 54px;
+  }
+}
+
+.footer-wrapper-text {
+  text-transform: uppercase;
+  color: #FCFCFC;
+  @include mobile {
+    width: 234px;
+  }
+  
+  @include tablet {
+    width: 352px;
+  }
+  
+  @include desktop {
+    width: 504px;
+  }
+}
+
+.footer-text {
+  
+
+  @include mobile {
+    @include typography (700, 18px, 1.22);
+  } 
+  
+  @include tablet { 
+    @include typography (700, 26px, 1.23);
+    letter-spacing: 0.04em;
+  }
+
+  @include desktop {
+    @include typography (700, 30px, 1.23);}
+}
+
+.footer-text--accent {
+  letter-spacing: 0.06em;
+  @include mobile {
+    @include typography (700, 34px, 1.21);
+    letter-spacing: 0.04em;
+  }
+
+  @include tablet {
+    @include typography (700, 48px, 1.23);
+    
+  }
+
+  @include desktop {
+  @include typography (700, 58px, 1.22);    
+  }
+}
+
+.footer-wrapper-contacts {
+ text-align: right; 
+}
+
+.social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+
+}
+
+.social-link { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  @include mobile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $yellow;
+  }
+
+  @include tablet {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $yellow;
+  }
+
+  &:hover, &:focus {
+    @include mobile {
+        width: 34px;
+        height: 34px;
+        
+      }
+    
+      @include tablet {
+        width: 36px;
+        height: 36px;
+       
+      }
+  }
+
+}
+
+.social-icon {
+  fill: $green-backgr;
+
+
+  @include mobile {
+    width: 19px;
+    height: 19px;
+  }
+
+  @include tablet {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: $white;
+}
+
+.footer-contacts {
+  color: $black;
+  @include mobile {
+    margin-top: 38px;
+    @include typography (700, 12px, 1.86);
+  }
+  @include tablet {
+    margin-top: 32px;
+    @include typography (700, 14px, 1.86);
+  }
+  @include desktop {
+    margin-top: 40px;
+    @include typography (700, 16px, 1.86);
+    
+  }
+}
+
+.footer-contacts-phone {
+  color: $white;
+  text-decoration: none;
+}
+
+.footer-wrapper-copyright {
+  @include mobile {
+    padding-top: 16px;
+    padding-bottom: 62px;
+  }
+  @include tablet {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  @include desktop {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.footer-coperight-text {
+  color: #7A7A7A;
+  text-align: center;
+  
+    @include mobile {
+      @include typography (700, 14px, 1.52);      
+    }
+  
+    @include tablet {
+      @include typography (700, 14px, 1.86);
+      letter-spacing: 0.02em;
+    }
+  
+    @include desktop {
+      @include typography (700, 12px, 1.86);
+      
+    }
+}
