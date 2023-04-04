@@ -19,18 +19,19 @@
     background-color: $yellow;
 
     &:hover {
-        border-radius: 2px solid $green;
+        border-color: $green;
         background-color: $green;
+        color:#ffffff;
     }
 
     &:focus {
-        border-radius: 2px solid $green;
+        border-color: $green;
         background-color: $green;
         color: #ffffff;
     }
 
     &:disabled {
-        border-radius: 2px solid $grey;
+        border-color: $grey;
         background-color: $grey;
     }
 }
@@ -39,16 +40,17 @@
     background-color: transparent;
 
     &:hover {
-        border-radius: 2px solid $green;        
+        border-color: $green;  
+        color: #ffffff;      
     }
 
     &:focus {
-        border-radius: 2px solid $green;
+        border-color: $green;
         color: #ffffff; 
     }
 
     &:disabled {
-        border-radius: 2px solid $grey;
+        border-color: $grey;
     }
 }
 
