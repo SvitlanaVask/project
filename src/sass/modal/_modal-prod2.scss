@@ -1,0 +1,40 @@
+.modal-prod2 {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 32px 54px;
+  z-index: 5;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: $white;
+  transition: transform 250ms linear;
+
+  width: 568px;
+  // height: 644px;
+
+  border: 1px solid $yellow;
+}
+
+
+
+.modal-prod2-image {
+  width: 132px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  
+
+}
+
+.prod2 .kcal-item {
+  border: 2px solid $olive-backgr;
+}
+
+.prod2 .kcal-num {
+  background-color: $olive-backgr;
+  border: 2px solid $olive-backgr;
+  box-shadow: 0px 6px 20px rgba(153, 114, 23, 0.25);
+}
