@@ -2,7 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector("[fran-modal-open]"),
     closeModalBtn: document.querySelector("[close-franshise]"),
-    modal: document.querySelector("[franshise]"),
+    modal: document.querySelector(".backdrop-franshise"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);

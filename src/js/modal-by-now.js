@@ -2,7 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[buy-now-close]"),
-    modal: document.querySelector("[buy-now]"),
+    modal: document.querySelector(".backdrop-buy-now"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
